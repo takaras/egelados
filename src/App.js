@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Layout from './components/layout/layout';
 import MapContainer from './components/map-container/map-container';
 import MapControls from './components/map-controls/map-controls';
+import MapLoader from './components/map-loader/map-loader';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -45,7 +46,7 @@ const App = () => {
     <Layout>
       <div className="container">
         {isLoading ? (
-          <p>Loading...</p>
+          <MapLoader />
         ) : (
           <>
             <MapContainer features={features} />
