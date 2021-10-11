@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+import useLocalStorage from './hooks/useLocalStorage';
+
 import Layout from './components/layout/layout';
 import MapContainer from './components/map-container/map-container';
 import MapControls from './components/map-controls/map-controls';
@@ -8,7 +10,7 @@ import MapLoader from './components/map-loader/map-loader';
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
-  const [timespan, setTimespan] = useState('all_hour');
+  const [timespan, setTimespan] = useLocalStorage('timespan', 'all_hour');
   const [countEarthquakes, setCountEarthquakes] = useState(0);
   const [features, setFeatures] = useState([]);
 
