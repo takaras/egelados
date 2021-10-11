@@ -5,9 +5,9 @@ const Header = () => {
     <header className={styles.header}>
       <div className="container">
         <div className={styles.headerWrapper}>
-          <a href="/" className={styles.logo}>
+          <a href={process.env.PUBLIC_URL} className={styles.logo}>
             <img
-              src="/images/logo.png"
+              src={`${process.env.PUBLIC_URL}/images/logo.png`}
               alt=""
               className={styles.logoImage}
               width="32"

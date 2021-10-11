@@ -40,7 +40,7 @@ const App = () => {
       <Layout>
         <p>The data are currently not available.</p>
         <p>
-          Please <a href="/">try again</a>.
+          Please <a href={process.env.PUBLIC_URL}>try again</a>.
         </p>
       </Layout>
     );
