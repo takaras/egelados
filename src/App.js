@@ -2,15 +2,17 @@ import { useEffect, useState } from 'react';
 
 import Layout from './components/layout/layout';
 import MapContainer from './components/map-container/map-container';
+import MapControls from './components/map-controls/map-controls';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [timespan, setTimespan] = useState('all_hour');
   const [features, setFeatures] = useState([]);
 
   useEffect(() => {
     setIsLoading(true);
-    const url = `https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson`;
+    const url = `https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/${timespan}.geojson`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
@@ -26,7 +28,7 @@ const App = () => {
         setError(true);
         setIsLoading(false);
       });
-  }, []);
+  }, [timespan]);
 
   if (error) {
     return (
@@ -49,6 +51,7 @@ const App = () => {
             <MapContainer features={features} />
           </>
         )}
+        <MapControls active={timespan} changeTimespan={setTimespan} />
       </div>
     </Layout>
   );

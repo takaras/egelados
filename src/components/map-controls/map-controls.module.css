@@ -1,0 +1,17 @@
+.button {
+  padding: .6rem 1.5rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-primary);
+  border-radius: .4rem;
+}
+
+.button:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.button:hover,
+.button:focus,
+.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
