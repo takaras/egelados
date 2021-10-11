@@ -1,0 +1,24 @@
+.header {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--gray-500);
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.logoImage {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-right: .5rem;
+}

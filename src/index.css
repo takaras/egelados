@@ -1,0 +1,54 @@
+:root {
+  --text-color: #000;
+  --gray-500: #ccc;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: var(--text-color);
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  line-height: normal;
+  background: none;
+  border: none;
+  margin: .5rem 0;
+  cursor: pointer;
+}
+
+.font-heading {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1432px;
+  margin: 0 auto;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}

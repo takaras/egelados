@@ -1,8 +1,12 @@
+import Layout from './components/layout/layout';
+
 function App() {
   return (
-    <div className="App">
-      <p>Egelados</p>
-    </div>
+    <Layout>
+      <div className="container">
+        <p>Egelados</p>
+      </div>
+    </Layout>
   );
 }
 
