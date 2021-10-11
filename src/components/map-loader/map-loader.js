@@ -4,7 +4,7 @@ import './map-loader.css';
 const MapLoader = () => {
   return (
     <div className="mapLoader">
-      <div class="lds-spinner">
+      <div className="lds-spinner">
         <div></div>
         <div></div>
         <div></div>

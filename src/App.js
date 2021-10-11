@@ -9,6 +9,7 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
   const [timespan, setTimespan] = useState('all_hour');
+  const [countEarthquakes, setCountEarthquakes] = useState(0);
   const [features, setFeatures] = useState([]);
 
   useEffect(() => {
@@ -24,6 +25,7 @@ const App = () => {
         }
 
         setFeatures(data.features);
+        setCountEarthquakes(data.metadata.count);
       })
       .catch((e) => {
         setError(true);
@@ -42,6 +44,22 @@ const App = () => {
     );
   }
 
+  let timespanText;
+  switch (timespan) {
+    case 'all_day':
+      timespanText = '24 hours';
+      break;
+    case 'all_week':
+      timespanText = '7 days';
+      break;
+    case 'all_month':
+      timespanText = '30 days';
+      break;
+    default:
+      timespanText = 'hour';
+      break;
+  }
+
   return (
     <Layout>
       <div className="container">
@@ -49,6 +67,10 @@ const App = () => {
           <MapLoader />
         ) : (
           <>
+            <p style={{ marginBottom: '0.8rem' }}>
+              {countEarthquakes > 0 ? countEarthquakes : 'No'} earthquakes in
+              the past {timespanText}
+            </p>
             <MapContainer features={features} />
           </>
         )}
