@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/egelados/static/css/main.6c6dbbe4.chunk.css",
-    "main.js": "/egelados/static/js/main.cd867350.chunk.js",
-    "main.js.map": "/egelados/static/js/main.cd867350.chunk.js.map",
+    "main.css": "/egelados/static/css/main.b99d7256.chunk.css",
+    "main.js": "/egelados/static/js/main.c49c7b93.chunk.js",
+    "main.js.map": "/egelados/static/js/main.c49c7b93.chunk.js.map",
     "runtime-main.js": "/egelados/static/js/runtime-main.003a1cfa.js",
     "runtime-main.js.map": "/egelados/static/js/runtime-main.003a1cfa.js.map",
     "static/css/2.5bebb84e.chunk.css": "/egelados/static/css/2.5bebb84e.chunk.css",
-    "static/js/2.f68a4a8e.chunk.js": "/egelados/static/js/2.f68a4a8e.chunk.js",
-    "static/js/2.f68a4a8e.chunk.js.map": "/egelados/static/js/2.f68a4a8e.chunk.js.map",
+    "static/js/2.5128bbf3.chunk.js": "/egelados/static/js/2.5128bbf3.chunk.js",
+    "static/js/2.5128bbf3.chunk.js.map": "/egelados/static/js/2.5128bbf3.chunk.js.map",
     "index.html": "/egelados/index.html",
     "static/css/2.5bebb84e.chunk.css.map": "/egelados/static/css/2.5bebb84e.chunk.css.map",
-    "static/css/main.6c6dbbe4.chunk.css.map": "/egelados/static/css/main.6c6dbbe4.chunk.css.map",
-    "static/js/2.f68a4a8e.chunk.js.LICENSE.txt": "/egelados/static/js/2.f68a4a8e.chunk.js.LICENSE.txt"
+    "static/css/main.b99d7256.chunk.css.map": "/egelados/static/css/main.b99d7256.chunk.css.map",
+    "static/js/2.5128bbf3.chunk.js.LICENSE.txt": "/egelados/static/js/2.5128bbf3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.003a1cfa.js",
     "static/css/2.5bebb84e.chunk.css",
-    "static/js/2.f68a4a8e.chunk.js",
-    "static/css/main.6c6dbbe4.chunk.css",
-    "static/js/main.cd867350.chunk.js"
+    "static/js/2.5128bbf3.chunk.js",
+    "static/css/main.b99d7256.chunk.css",
+    "static/js/main.c49c7b93.chunk.js"
   ]
 }
